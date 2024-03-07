@@ -1,0 +1,48 @@
+<div class="w-full  pt-28">
+
+
+    <!-- <img src="https://thepythagoras.com/images/logo.svg" class="w-64 h-64 mx-auto" alt="Pythagoras AI the Numerologist Assistant"> -->
+
+    <h1 class="text-2xl text-white font-bold text-center mt-8">Lets find out more about you!</h1>
+    <form class="mx-auto max-w-sm mt-8" method="post" action="">
+        <div class="flex flex-col mb-4">
+            <label for="yourName" class="mb-2">Your Name:</label>
+            <div class="gradient-border">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <input type="text" id="yourName" name="yourName" required="" class=" px-4 py-2 bg-black  rounded-md focus:outline-none  text-purple-900 text-xl">
+            </div>
+           
+        </div>
+        <!-- div class="flex flex-col mb-4">
+            <label for="lastName" class="mb-2">Bla bla:</label>
+            <input type="text" id="lastName" name="lastName" required class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-purple-900 text-xl">
+        </div -->
+        <div class="flex flex-col mb-4 relative">
+            <label for="birthday" class="mb-2">Birth Date:</label>
+            <div class="gradient-border">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <input type="date" id="birthday" name="birthday" required="" value="2024-02-15" class="px-4 py-2  bg-black  rounded-md focus:outline-none  text-xl">
+                <img class="w-6 absolute bottom-3 right-5" src="calendar.svg" alt="">
+            </div>
+           
+        
+        </div>
+        <!-- div class="flex flex-col mb-4">
+            <label for="birthday" class="mb-2">Birth Time (optional):</label>
+            <input type="time" id="birthtime" name="birthtime" value="00:00" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-purple-900 text-xl">
+        </div -->        
+        <input type="hidden" name="action" value="collect_data_1">
+        <div class="flow-root">
+            <!-- !!Currently broken do not test!! -->
+            <button type="submit" class="w-full mt-8 px-4 py-2 bg-purple-950 border border-2 border-purple-800 hover:bg-purple-400 hover:border hover:border-2 hover:border-yellow-500 text-white rounded-md ">Next&nbsp<i class=" fa-solid fa-arrow-right-long"></i></button>
+            
+        
+        </div>
+    </form>
+</div>

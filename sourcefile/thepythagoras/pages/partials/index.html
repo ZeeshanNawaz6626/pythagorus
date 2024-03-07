@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dfdf</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-900 text-slate-200 linear-gradient(to right, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42))">
+	<div class="flex flex-wrap pageSt justify-center items-center w-full h-full z-[1] relative top-0 left-0 right-0 after:content-[''] after:bg-[url('/images/bg-right.png')] after:bg-no-repeat after:bg-contain after:w-[246px] after:h-[421px] after:bg-right-bottom after:absolute after:right-0 after:top-0 before:content-[''] before:bg-[url('/images/bg-left.png')] before:bg-no-repeat before:bg-contain before:w-[300px] before:h-[490px] before:bg-right-top before:absolute before:left-0 before:bottom-0">
+
+	    <header class="flex items-center border-b w-screen border-slate-600 h-[135px]">
+	        <div class="container mx-auto flex justify-between items-center Logo">
+	            <a href="/"><img class="w-[70px]" src="<?php echo $gc['path']['web_root']; ?>/images/logo.png" alt="Pythagoras AI Oracle"></a>
+
+	            <div class="">
+	                <ul class="flex">
+	                    <li><a class="" href="/">About Us</a></li>
+	                    <li><a href="/">Blog</a></li>
+	                    <li><a href="/">Terms of Us</a></li>
+	                    <li><a href="/">Pricing</a></li>
+	                    <li><a href="/">Contact Us</a></li>
+	                </ul>
+
+	                <button type="button">Signup</button>
+	            </div>
+
+	        </div>
+	    </header>
+
+	<div class="w-full">
+
+
+	            <img src="https://thepythagoras.com/images/logo.svg" class="w-64 h-64 mx-auto" alt="Pythagoras AI the Numerologist Assistant">
+	        
+	            <h1 class="text-2xl font-bold text-center mt-8">Lets find out more about you</h1>
+	            <form class="mx-auto max-w-sm mt-8" method="post" action="">
+	                <div class="flex flex-col mb-4">
+	                    <label for="yourName" class="mb-2">Your Name:</label>
+	                    <input type="text" id="yourName" name="yourName" required="" value="Dean" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-purple-900 text-xl">
+	                </div>
+	                <!-- div class="flex flex-col mb-4">
+	                    <label for="lastName" class="mb-2">Bla bla:</label>
+	                    <input type="text" id="lastName" name="lastName" required class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-purple-900 text-xl">
+	                </div -->
+	                <div class="flex flex-col mb-4">
+	                    <label for="birthday" class="mb-2">Birth Date:</label>
+	                    <input type="date" id="birthday" name="birthday" required="" value="2024-02-15" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-purple-900 text-xl">
+	                </div>
+	                <!-- div class="flex flex-col mb-4">
+	                    <label for="birthday" class="mb-2">Birth Time (optional):</label>
+	                    <input type="time" id="birthtime" name="birthtime" value="00:00" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-purple-900 text-xl">
+	                </div -->        
+	                <input type="hidden" name="action" value="collect_data_1">
+	                <div class="flow-root">
+	                    <!-- !!Currently broken do not test!! -->
+	                    <button type="submit" class="float-left mt-8 px-4 py-2 bg-purple-950 border border-2 border-purple-800 hover:bg-purple-400 hover:border hover:border-2 hover:border-yellow-500 text-white rounded-md">Next</button>
+	                    <a href="/login" class="float-right mt-8 px-4 py-2 xxbg-purple-950 hover:text-sky-400 text-white xxrounded-md underline">Login</a>                </div>
+	            </form>
+	        </div>
+
+
+
+	        <footer class="flex flex-wrap w-full bg-black/[.49] flex-col">
+	             <div class="topFoot border-b border-white/[.20]">
+	                  <div class="container mx-auto flex justify-between items-center Logo py-5">
+	                       <a href="/"><img class="w-[70px]" src="<?php echo $gc['path']['web_root']; ?>/images/logo.png" alt="Pythagoras AI Oracle"></a>
+	                       <div class="footNav">
+	                            <ul>
+	                                 <li><a href="<?php echo $gc['path']['web_root']; ?>/v2/pages/info/privacy.php">Terms of Conditions</a></li>
+	                                 <li><a href="<?php echo $gc['path']['web_root']; ?>/v2/pages/info/privacy.php">Privacy Policy</a></li>
+	                            </ul>                         
+	                       </div>
+	                  </div>
+	             </div>  
+	             <div class="botmFoot">
+	                  <div class="container mx-auto text-center py-5">
+	                       <p>Copyright 2024 All Rights Are Reserved PYTHAGORAS AI</p>
+	                  </div>
+	             </div>   
+	        </footer>
+
+	        
+
+	    </div>
+
+</body>
+</html>

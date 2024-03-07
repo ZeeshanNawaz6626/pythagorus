@@ -1,0 +1,45 @@
+
+AddDefaultCharset utf-8
+
+Options All -Indexes
+Options -Indexes -MultiViews
+
+
+RewriteEngine On
+
+
+#redirect www to non www with ssl---------------------
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,END]
+#-----------------------------------------------
+
+#DirectoryIndex maintenance.html
+
+RewriteRule ^$ /v2/pages/homepage.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^info_(.*)$ /v2/pages/info.php?page=$1&check=viapermalink [NC,QSA,END]
+
+RewriteRule ^privacy$ /v2/pages/info/privacy.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^login$ /v2/pages/login.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^reset_pass$ /v2/pages/reset_pass.php?check=viapermalink [NC,QSA,END]
+
+RewriteRule ^unsubscribe\/key--(.*)--(.*)--(.*)$ v2/pages/myaccount/unsubscribe.php?key=$1&act=$2&uid=$3&check=viapermalink [NC,QSA,END]
+RewriteRule ^login$ /v2/pages/login.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^logout$ /v2/pages/logout.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^reset_pass$ /v2/pages/reset_pass.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^create_account$ /v2/pages/create_account.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^register_account$ /v2/pages/register_account.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^confirm_registration$ /v2/pages/confirm_registration.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^paypal_success$ /v2/pages/paypal_success.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^paypal_success_aicreds$ /v2/pages/paypal_success_aicreds.php?check=viapermalink [NC,QSA,END]
+RewriteRule ^mysettings$ /v2/pages/myaccount/mysettings.php?check=viapermalink [NC,QSA,END]
+
+RewriteRule ^test$ /v2/pages/test.php?check=viapermalink [NC,QSA,END]
+
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php83” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

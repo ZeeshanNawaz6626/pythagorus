@@ -1,0 +1,74 @@
+<form method="post" action="" class="fiorm">
+    <div class="flex justify-center items-center pt-12">
+        <div class="xxbg-white p-2 xxrounded xxshadow-md w-96">
+            <div class="w-20 mx-auto my-2">
+            <h2 class="text-2xl font-bold mb-4 flex justify-between  justify-center  items-center text-center">Login</h2>
+        </div>
+                <div class="gradient-border mt-8">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                    <input type="email" id="email" name="email" placeholder="Email" class="bg-transparent w-full px-3 py-4  rounded focus:outline-none focus:border-none required="">
+                
+            </div>
+            <div class="gradient-border mt-8">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                <input type="password" id="password" name="password" placeholder="Password" class="bg-transparent  w-full px-3 py-4 rounded focus:outline-none " required="">
+                <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+        </div>
+                <div class="flex items-center justify-between mb-4">
+                    <label for="remember" class="flex items-center">
+                        <input type="checkbox" id="remember" name="remember" class="mr-2">
+                        <span class="text-sm text-slate-200 ">Remember me</span>
+                    </label>
+                    <a href="/reset_password" class="text-sm text-slate-200">Forgot password?</a>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-[#502582] text-white py-2 px-4 rounded hover:bg-purple-950">Sign In&nbsp;<i class="fa-solid fa-arrow-up-long fa-rotate-90"></i></button>
+                </div>
+            <div class="pt-4 flex justify-between justify-center w-3/4 mx-auto my-2">
+                <p class="text-slate-200">Don't have an account ?<a class="text-[#FF8A5C]">Sign Up</a></p>
+            </div>
+            <div class="mt-4">
+                <p class="line text-center text-slate-200">Or sign in with 
+                </p>
+                <div class="flex justify-center mt-8">
+
+
+
+
+                  <!-- a href="https://thepythagoras.com/lib/google_login.php" class="w-full inline-flex items-center justify-center py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-gray-900 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                      <svg class="w-5 h-5 mr-2" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_13183_10121)"><path d="M20.3081 10.2303C20.3081 9.55056 20.253 8.86711 20.1354 8.19836H10.7031V12.0492H16.1046C15.8804 13.2911 15.1602 14.3898 14.1057 15.0879V17.5866H17.3282C19.2205 15.8449 20.3081 13.2728 20.3081 10.2303Z" fill="#3F83F8"/><path d="M10.7019 20.0006C13.3989 20.0006 15.6734 19.1151 17.3306 17.5865L14.1081 15.0879C13.2115 15.6979 12.0541 16.0433 10.7056 16.0433C8.09669 16.0433 5.88468 14.2832 5.091 11.9169H1.76562V14.4927C3.46322 17.8695 6.92087 20.0006 10.7019 20.0006V20.0006Z" fill="#34A853"/><path d="M5.08857 11.9169C4.66969 10.6749 4.66969 9.33008 5.08857 8.08811V5.51233H1.76688C0.348541 8.33798 0.348541 11.667 1.76688 14.4927L5.08857 11.9169V11.9169Z" fill="#FBBC04"/><path d="M10.7019 3.95805C12.1276 3.936 13.5055 4.47247 14.538 5.45722L17.393 2.60218C15.5852 0.904587 13.1858 -0.0287217 10.7019 0.000673888C6.92087 0.000673888 3.46322 2.13185 1.76562 5.51234L5.08732 8.08813C5.87733 5.71811 8.09302 3.95805 10.7019 3.95805V3.95805Z" fill="#EA4335"/></g><defs><clipPath id="clip0_13183_10121"><rect width="20" height="20" fill="white" transform="translate(0.5)"/></clipPath></defs>
+                      </svg>                            
+                      Log in with Google
+                  </a -->
+
+                <!-- 
+                    https://developers.google.com/identity/gsi/web/reference/html-reference#server-side 
+                    https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
+                -->
+
+                <script src="https://accounts.google.com/gsi/client" async="" defer=""></script>
+                <div id="g_id_onload" data-client_id="283912281743-sf1mge1p8b7amumr48nubqeh1lkeoa8c.apps.googleusercontent.com" data-context="signin" data-ux_mode="redirect" data-login_uri="https://thepythagoras.com/lib/google_callback.php" data-itp_support="true" data-auto_prompt="false" style="margin-left: 0px; ">
+                </div>
+
+                <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="signin_with" *="" continue_with="" signin_with="" data-size="large" data-logo_alignment="left"><div class="S9gUrf-YoZ4jf" style="position: relative;"><div></div><iframe src="https://accounts.google.com/gsi/button?type=standard&amp;shape=rectangular&amp;theme=outline&amp;text=signin_with&amp;size=large&amp;logo_alignment=left&amp;client_id=283912281743-sf1mge1p8b7amumr48nubqeh1lkeoa8c.apps.googleusercontent.com&amp;iframe_id=gsi_719421_949718&amp;as=9npUzzch6aVtEeFdMeZeqw" allow="identity-credentials-get" id="gsi_719421_949718" title="Sign in with Google Button" style="display: block; position: relative; top: 0px; left: 0px; height: 44px; width: 252px; border: 0px; margin: -2px -10px;"></iframe></div></div>
+
+
+
+                  <a href="https://thepythagoras.com/lib/facebook_login.php" class="ml-4 w-full inline-flex items-center justify-center py-2 px-2 text-xs font-medium text-white bg-[#3D6AD6] focus:outline-none  rounded   focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-5 h-5 mr-2" style="color: white ;"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>                            
+                      Log in with Facebook
+                  </a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div></form>

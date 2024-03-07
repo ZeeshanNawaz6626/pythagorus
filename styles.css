@@ -1,0 +1,154 @@
+/* .border-gradient {
+    border: 1px solid;
+    border-image-slice: 1;
+  }
+  .border-gradient-green {
+    border-image-source: linear-gradient(to left, #55515100, #acaaaa,#0000) ;
+  }
+ .only-top{
+  border-right: 0;
+  border-left: 0;
+ } */
+
+ /* #bottom-only {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to left, #55515100, #acaaaa, #0000) 1;
+} */
+
+a {
+	position: relative;
+color: white;
+	text-decoration: none;
+	overflow: hidden;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+a span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to left, #55515100, #acaaaa,#0000);
+	animation: animate1 2s linear infinite;
+}
+
+
+
+/* a span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to bottom, #171618, #3bff3b);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+} */
+
+
+a span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to left,#0000, #acaaaa);
+	animation: animate3 2s linear infinite;
+}
+
+
+/* a span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to top, #171618, #3bff3b);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+} */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+
+.gradient-border{
+	position: relative;
+color: white;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.gradient-border span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to left, #55515100, #acaaaa,#0000);
+	animation: animate1 2s linear infinite;
+}
+
+
+
+/* a span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 3px;
+	background: linear-gradient(to bottom, #171618, #3bff3b);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+} */
+
+
+.gradient-border span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to left,#0000, #acaaaa);
+	animation: animate3 2s linear infinite;
+}
+
+.line {
+	display: flex;
+	flex-direction: row;
+  }
+  .line:before, .line:after{
+	content: "";
+	flex: 1 1;
+	border-bottom: 1px solid;
+	margin: auto;
+  }
+  .line:before {
+	margin-right: 10px
+  }
+  .line:after {
+	margin-left: 10px
+  }
+  .password-toggle-icon {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	cursor: pointer;
+
+  }
+  
+  .password-toggle-icon i {
+	font-size: 18px;
+	line-height: 1;
+	color: white;
+
+	border-radius: 50%;
+	
+  }
+  
+  
